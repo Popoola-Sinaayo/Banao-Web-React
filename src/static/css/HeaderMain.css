@@ -1,0 +1,62 @@
+.main {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../images/background.png");
+  background-repeat: no-repeat;
+  padding-bottom: 60px;
+  background-size: 100% 100%;
+}
+
+.text {
+  color: #ffffff;
+  padding-top: 250px;
+  padding-left: 180px;
+  /* transform: translate(15%, 300%); */
+}
+
+.text .big {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: -10px;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.icon-mobile {
+  color: white;
+  font-weight: 700;
+}
+
+.button-mobile {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+@media (max-width: 630px) {
+  .nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+  }
+  .main {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  .text {
+    padding-left: 50px;
+    padding-top: 100px;
+  }
+}
